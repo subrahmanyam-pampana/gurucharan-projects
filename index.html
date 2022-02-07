@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        position: absolute;
+        left: 36%;
+      }
+      .increment-button{
+          background-color: green;
+      }
+      .decrement-button{
+          background-color: red;
+      }
+
+      button{
+        width: 50px;
+        height: 25px;
+        color: white;
+        border-radius: 5px;
+
+      }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Motor Control</h1>
+        <p>Speed(m/s)</p>
+        <input type="text" id="speed" value="0">
+        <button class="increment-button" onclick="incrementSpeed()">+</button>
+        <button class="decrement-button" onclick="speedDecrement()">-</button>
+    
+        <p>Angle(degree)</p>
+        <input type="text" id="angle" value="0">
+        <button class="increment-button" onclick="angleIncrement()">+</button>
+        <button class="decrement-button" onclick="angledecrement()">-</button>
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
